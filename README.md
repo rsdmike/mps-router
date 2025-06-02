@@ -14,7 +14,7 @@ If you want debug in vscode devcontainer, try to open the project with devcontai
 
 - Step1: Press **Ctrl + Shift+ P** in vscode;
 - Step2: Type **Dev Containers: Reopen in Container**;
-- Step3: Click the item which appear in column;
+- Step3: Click the item which **appears** in the column;
 - Step4: Open a terminal, build & run app with command;
 
 <br>
