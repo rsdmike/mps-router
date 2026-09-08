@@ -3,7 +3,7 @@ package test
 import (
 	"database/sql"
 
-	"github.com/open-amt-cloud-toolkit/mps-router/internal/db"
+	"github.com/device-management-toolkit/mps-router/internal/db"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -20,6 +20,7 @@ type MockSQLDBManager struct {
 func (mock *MockSQLDBManager) Connect() (db.Database, error) {
 	return mock.ConnectResult, mock.ConnectError
 }
+
 func (mock *MockSQLDBManager) GetMPSInstance(db db.Database, guid string) (string, error) {
 	if mock.MPSInstanceError != nil {
 		return "", mock.MPSInstanceError
@@ -48,6 +49,7 @@ type MockNOSQLDBManager struct {
 func (mock *MockNOSQLDBManager) Connect() (db.Database, error) {
 	return mock.ConnectResult, mock.ConnectError
 }
+
 func (mock *MockNOSQLDBManager) GetMPSInstance(db db.Database, guid string) (string, error) {
 	if mock.MPSInstanceError != nil {
 		return "", mock.MPSInstanceError

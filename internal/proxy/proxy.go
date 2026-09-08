@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/open-amt-cloud-toolkit/mps-router/internal/db"
+	"github.com/device-management-toolkit/mps-router/internal/db"
 )
 
 // Regular expression to match GUID format
@@ -35,7 +35,7 @@ type Server struct {
 }
 
 // NewServer creates a new proxy server with the given address and target
-func NewServer(db db.Manager, addr string, target string) Server {
+func NewServer(db db.Manager, addr, target string) Server {
 	if addr == "" {
 		addr = ":8003"
 	}
@@ -116,7 +116,7 @@ func (s Server) forward(conn net.Conn, destChannel chan net.Conn) {
 			destination := s.Target
 			guid := s.parseGuid(string(b))
 			if guid != "" {
-				//call to database to get the mps instance
+				// call to database to get the mps instance
 				instance := s.DB.Query(guid)
 				if instance != "" {
 					parts := strings.Split(destination, ":")
@@ -148,7 +148,7 @@ func (s Server) forward(conn net.Conn, destChannel chan net.Conn) {
 }
 
 // backward proxies data from the destination server back to the source connection
-func (s Server) backward(conn net.Conn, dst net.Conn) {
+func (s Server) backward(conn, dst net.Conn) {
 	defer func() {
 		if err := conn.Close(); err != nil {
 			log.Printf("Error closing conn: %v", err)

@@ -22,31 +22,33 @@ jobs:
 
     steps:
     - name: Harden Runner
-      uses: step-security/harden-runner@0634a2670c59f64b4a01f0f96f84700a4088b9f0 # v2.12.0
+      uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
       with:
         egress-policy: audit
 
     - name: Checkout
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         persist-credentials: false
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@1f40c72289eff860ee54a304f1438e3cff362e0a # v4.3.0
     - name: Docker Setup Buildx
-      uses: docker/setup-buildx-action@v3.10.0
+      uses: docker/setup-buildx-action@37fe631027851001ddb9b187196cc803df7f5f0e # v4.3.0
     - name: Docker Login
-      uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+      uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
       with:
         registry: vprodemo.azurecr.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Docker Login DockerHub
-      uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+      uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
       with:
         registry: docker.io
         username: ${{ secrets.INTC_DOCKER_USERNAME }}
         password: ${{ secrets.INTC_DOCKER_PASSWORD }}
         logout: true
     - name: Semantic Release
-      uses: cycjimmy/semantic-release-action@0a51e81a6baff2acad3ee88f4121c589c73d0f0e # v4.2.0
+      uses: cycjimmy/semantic-release-action@b12c8f6015dc215fe37bc154d4ad456dd3833c90 # v6.0.0
       with:
         semantic_version: 19.0.5  # It is recommended to specify specifying version range
                                     # for semantic-release.
@@ -64,10 +66,11 @@ jobs:
           echo "next=none" >> "$GITHUB_OUTPUT"
         fi
   
-    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+    # Credentials must persist: the release step below pushes to docker-release.
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 # zizmor: ignore[artipacked]
       if: ${{ steps.version.outputs.next != 'none' }}
       with:
-        repository: open-amt-cloud-toolkit/e2e-testing
+        repository: device-management-toolkit/e2e-testing
         ref: docker-release
         clean: true
         token: ${{ secrets.ROSIE_TOKEN }}

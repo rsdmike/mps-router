@@ -1,9 +1,40 @@
+## [2.5.14](https://github.com/device-management-toolkit/mps-router/compare/v2.5.13...v2.5.14) (2026-08-26)
+
+## [2.5.13](https://github.com/device-management-toolkit/mps-router/compare/v2.5.12...v2.5.13) (2026-07-27)
+
+## [2.5.12](https://github.com/device-management-toolkit/mps-router/compare/v2.5.11...v2.5.12) (2026-07-01)
+
+## [2.5.11](https://github.com/device-management-toolkit/mps-router/compare/v2.5.10...v2.5.11) (2026-06-03)
+
+## [2.5.10](https://github.com/device-management-toolkit/mps-router/compare/v2.5.9...v2.5.10) (2026-05-20)
+
+## [2.5.9](https://github.com/device-management-toolkit/mps-router/compare/v2.5.8...v2.5.9) (2026-04-09)
+
+## [2.5.8](https://github.com/device-management-toolkit/mps-router/compare/v2.5.7...v2.5.8) (2026-03-11)
+
+## [2.5.7](https://github.com/device-management-toolkit/mps-router/compare/v2.5.6...v2.5.7) (2026-02-18)
+
+## [2.5.6](https://github.com/device-management-toolkit/mps-router/compare/v2.5.5...v2.5.6) (2026-01-07)
+
+## [2.5.5](https://github.com/device-management-toolkit/mps-router/compare/v2.5.4...v2.5.5) (2025-12-02)
+
+## [2.5.4](https://github.com/device-management-toolkit/mps-router/compare/v2.5.3...v2.5.4) (2025-11-06)
+
+## [2.5.3](https://github.com/device-management-toolkit/mps-router/compare/v2.5.2...v2.5.3) (2025-10-13).
+
+
+### Bug Fixes
+
+* **ci:** add QEMU for multi-platform Docker builds ([f8e8df7](https://github.com/device-management-toolkit/mps-router/commit/f8e8df757926390eb0d1ffd489ef474270214402))
+
+## [2.5.2](https://github.com/device-management-toolkit/mps-router/compare/v2.5.1...v2.5.2) (2025-10-13)
+
 ## [2.5.1](https://github.com/device-management-toolkit/mps-router/compare/v2.5.0...v2.5.1) (2025-04-16)
 
 
 ### Bug Fixes
 
-* lint issues ([8560b88](https://github.com/device-management-toolkit/mps-router/commit/8560b889708f103ff19e9a05270ac7b6df45ff18))
+* lint issues ([8560b88](https://github.com/device-management-toolkit/mps-router/commit/8560b889708f103ff19e9a05270ac7b6df45ff18)) .
 
 # [2.5.0](https://github.com/device-management-toolkit/mps-router/compare/v2.4.0...v2.5.0) (2025-03-18)
 
@@ -19,31 +50,31 @@
 
 * **docker:** add support for devcontainer ([#428](https://github.com/device-management-toolkit/mps-router/issues/428)) ([3a09b77](https://github.com/device-management-toolkit/mps-router/commit/3a09b773c3aeaea170c4207ea44e5193a9ab6fae))
 
-## [2.3.13](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.12...v2.3.13) (2024-12-16)
+## [2.3.13](https://github.com/device-management-toolkit/mps-router/compare/v2.3.12...v2.3.13) (2024-12-16)
 
 
 ### Bug Fixes
 
-* **deps:** update dependencies for direct and transitive ([f5fb48a](https://github.com/open-amt-cloud-toolkit/mps-router/commit/f5fb48a1cac6e8d8eed985d90386a2cd645b0e4e))
+* **deps:** update dependencies for direct and transitive ([f5fb48a](https://github.com/device-management-toolkit/mps-router/commit/f5fb48a1cac6e8d8eed985d90386a2cd645b0e4e))
 
-## [2.3.12](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.11...v2.3.12) (2024-11-14)
+## [2.3.12](https://github.com/device-management-toolkit/mps-router/compare/v2.3.11...v2.3.12) (2024-11-14)
 
-## [2.3.11](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.10...v2.3.11) (2024-11-08)
+## [2.3.11](https://github.com/device-management-toolkit/mps-router/compare/v2.3.10...v2.3.11) (2024-11-08)
 
-## [2.3.10](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.9...v2.3.10) (2024-08-12)
+## [2.3.10](https://github.com/device-management-toolkit/mps-router/compare/v2.3.9...v2.3.10) (2024-08-12)
 
-## [2.3.9](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.8...v2.3.9) (2024-07-31).
+## [2.3.9](https://github.com/device-management-toolkit/mps-router/compare/v2.3.8...v2.3.9) (2024-07-31).
 
 
 ### Bug Fixes
 
-* **postgres:** ensure that the connection pool is reused across queries ([bf82988](https://github.com/open-amt-cloud-toolkit/mps-router/commit/bf8298815a651782ce828cc67b310842aab5fab6))
+* **postgres:** ensure that the connection pool is reused across queries ([bf82988](https://github.com/device-management-toolkit/mps-router/commit/bf8298815a651782ce828cc67b310842aab5fab6))
 
-## [2.3.8](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.7...v2.3.8) (2024-07-11)
+## [2.3.8](https://github.com/device-management-toolkit/mps-router/compare/v2.3.7...v2.3.8) (2024-07-11)
 
-## [2.3.7](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.6...v2.3.7) (2024-06-06)
+## [2.3.7](https://github.com/device-management-toolkit/mps-router/compare/v2.3.6...v2.3.7) (2024-06-06)
 
-## [2.3.6](https://github.com/open-amt-cloud-toolkit/mps-router/compare/v2.3.5...v2.3.6) (2024-05-13).
+## [2.3.6](https://github.com/device-management-toolkit/mps-router/compare/v2.3.5...v2.3.6) (2024-05-13).
 
 <a name="v2.3.5"></a>
 ## [v2.3.5] - 2024-04-02
@@ -59,8 +90,8 @@
 - **deps:** bump wagoid/commitlint-github-action from 5.4.5 to 6.0.0 (#886e492) 
 - **deps:** bump cycjimmy/semantic-release-action from 4.0.0 to 4.1.0 (#4756f8e) 
 - **deps:** bump actions/add-to-project from 0.6.0 to 0.6.1 (#8b1a6fc) 
-- **deps:** bump github/codeql-action from 3.24.7 to 3.24.8 ([#206](https://github.com/open-amt-cloud-toolkit/mps/issues/206)) (#cca4256) 
-- **deps:** bump golang from `fc5e584` to `0466223` ([#205](https://github.com/open-amt-cloud-toolkit/mps/issues/205)) (#50381ed) 
+- **deps:** bump github/codeql-action from 3.24.7 to 3.24.8 ([#206](https://github.com/device-management-toolkit/mps/issues/206)) (#cca4256) 
+- **deps:** bump golang from `fc5e584` to `0466223` ([#205](https://github.com/device-management-toolkit/mps/issues/205)) (#50381ed) 
 - **deps:** bump docker/login-action from 3.0.0 to 3.1.0 (#63f5eb9) 
 - **deps:** bump actions/checkout from 4.1.1 to 4.1.2 (#5cbb035) 
 - **deps:** bump github/codeql-action from 3.24.6 to 3.24.7 (#5c1b0f5).
@@ -294,7 +325,7 @@
 - **proxy:** test forward and backward functions (#d02b571) 
 
 
-[Unreleased]: https://github.com/open-amt-cloud-toolkit/mps/compare/2.0.0...HEAD
-[2.0.0]: https://github.com/open-amt-cloud-toolkit/mps/compare/v2.1.0...2.0.0
-[v2.1.0]: https://github.com/open-amt-cloud-toolkit/mps/compare/v2.0.0...v2.1.0
-[v2.0.0]: https://github.com/open-amt-cloud-toolkit/mps/compare/v1.4.0...v2.0.0
+[Unreleased]: https://github.com/device-management-toolkit/mps/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/device-management-toolkit/mps/compare/v2.1.0...2.0.0
+[v2.1.0]: https://github.com/device-management-toolkit/mps/compare/v2.0.0...v2.1.0
+[v2.0.0]: https://github.com/device-management-toolkit/mps/compare/v1.4.0...v2.0.0
